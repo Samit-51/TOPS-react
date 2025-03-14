@@ -77,11 +77,11 @@ const Navbar = () => {
                     <li><a href="#" style={{ '--i': 3 }}>Results</a></li>
                     <li><a href="#" style={{ '--i': 4 }}>Home</a></li>
                     <li><a href="#" style={{ '--i': 5 }}>About us</a></li>
-                    <li><a href="#" style={{ '--i': 5 }}>Admission</a></li>
-                    <li><a href="#" style={{ '--i': 4 }}>News and Notice</a></li>
-                    <li><a href="#" style={{ '--i': 3 }}>Events</a></li>
-                    <li><a href="#" style={{ '--i': 2 }}>Our services</a></li>
-                    <li><a href="#" style={{ '--i': 1 }}>Contact us</a></li>
+                    <li><a href="#" style={{ '--i': 6 }}>Admission</a></li>
+                    <li><a href="#" style={{ '--i': 7 }}>News and Notice</a></li>
+                    <li><a href="#" style={{ '--i': 8 }}>Events</a></li>
+                    <li><a href="#" style={{ '--i': 9 }}>Our services</a></li>
+                    <li><a href="#" style={{ '--i': 10 }}>Contact us</a></li>
                 </ul>
             </nav>
         </header>

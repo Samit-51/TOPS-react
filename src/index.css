@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-:root{
-  --nav-colour: rgb(41, 131, 31);
+:root {
+    --nav-colour: rgb(41, 131, 31);
 }
 
 * {
@@ -12,7 +12,8 @@
 }
 
 html,
-body, #root {
+body,
+#root {
     min-height: 100vh;
     height: fit-content;
     color: #fff;
@@ -102,6 +103,7 @@ nav a {
 }
 
 .ham-burger-button {
+    font-size: 22px;
     border: none;
     background: none;
 }
@@ -120,9 +122,8 @@ nav a {
     transition: all 0.5s;
     z-index: 3;
     transform: translateX(100vw);
-    background: #242424;
-    border-radius: 20px 0 0 20px;
-    overflow-y: auto;
+    background: rgb(112, 180, 69);
+    overflow: hidden auto;
 }
 
 .ham-burger-menu ul {
@@ -142,19 +143,19 @@ nav a {
 
 .ham-burger-menu ul li a {
     text-decoration: none;
-    color: #eef;
+    color: #eaeaea;
 }
 
 .ham-burger-menu.active a {
     font-size: 18px;
-    animation: HamBurgerMove 0.3s linear forwards;
-    transform: translateX(100vw);
-    animation-delay: calc(var(--i) * 0.1s);
+    opacity: 0;
+    animation: move .625s ease-in-out forwards;
+    animation-delay: calc(var(--i) * .1s);
 }
 
-
-@keyframes HamBurgerMove {
+@keyframes move {
     from {
+        transform: translateX(100vw);
         opacity: 0;
     }
 
@@ -181,7 +182,7 @@ nav a {
     gap: 20px;
 }
 
-.top{
+.top {
     width: 100%;
     display: flex;
     align-items: center;
@@ -199,7 +200,7 @@ nav a {
     transition: all .6s;
 }
 
-.logo img{
+.logo img {
     border-radius: 50%;
 }
 
@@ -305,7 +306,7 @@ nav a {
     text-decoration: underline;
 }
 
-.contact-icon{
+.contact-icon {
     font-size: 18px;
 }
 
@@ -518,7 +519,9 @@ nav a {
 }
 
 @media only screen and (max-width: 768px) {
-    .main-links, .links{
+
+    .main-links,
+    .links {
         display: none;
     }
 
@@ -526,7 +529,7 @@ nav a {
         display: block;
     }
 
-    .logo{
+    .logo {
         margin-top: 8px;
     }
 
