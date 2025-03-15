@@ -1,12 +1,11 @@
 import React from 'react';
-import Navbar from '../Navbar';
-import Footer from '../Footer'
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer'
 import './About.css'
 
 const About = () => {
     return (
         <>
-            <Navbar />
             <div className="about-container">
                 {/* Index Section */}
                 <section className="index">
@@ -56,14 +55,7 @@ const About = () => {
                             dolores cumque asperiores voluptatem. Dolores similique necessitatibus minima? Rem veritatis explicabo
                             dignissimos provident quidem eaque. Obcaecati vero ea odio officia libero magnam voluptate animi ex
                             mollitia tenetur ad cupiditate iusto quos quae nostrum voluptatibus earum, illo temporibus. Molestiae
-                            voluptates dignissimos, qui distinctio magni numquam minus debitis quo alias ex, incidunt natus nesciunt
-                            deleniti neque ducimus ullam dolor soluta. Recusandae, laudantium quo! Vitae autem, alias aspernatur ex
-                            praesentium beatae quia, expedita obcaecati vel temporibus velit. Totam sed atque hic dolorum iusto
-                            eveniet corporis minima tempora dolorem placeat asperiores praesentium sit nesciunt distinctio molestias
-                            rerum animi consectetur, id quasi quia neque! Architecto quibusdam accusantium expedita totam vitae
-                            veritatis dolorum dolore reiciendis dignissimos sed optio quisquam, maiores corrupti voluptates amet ex
-                            quod, voluptas illum nobis. Nostrum esse enim nemo expedita? Sed cupiditate molestias maxime, nesciunt
-                            placeat sint exercitationem nobis commodi doloribus deserunt quod debitis optio dolores facilis!
+                           debitis optio dolores facilis!
                         </p>
                     </div>
                 </section>
@@ -91,13 +83,7 @@ const About = () => {
                             dolores cumque asperiores voluptatem. Dolores similique necessitatibus minima? Rem veritatis explicabo
                             dignissimos provident quidem eaque. Obcaecati vero ea odio officia libero magnam voluptate animi ex
                             mollitia tenetur ad cupiditate iusto quos quae nostrum voluptatibus earum, illo temporibus. Molestiae
-                            voluptates dignissimos, qui distinctio magni numquam minus debitis quo alias ex, incidunt natus nesciunt
-                            deleniti neque ducimus ullam dolor soluta. Recusandae, laudantium quo! Vitae autem, alias aspernatur ex
-                            praesentium beatae quia, expedita obcaecati vel temporibus velit. Totam sed atque hic dolorum iusto
-                            eveniet corporis minima tempora dolorem placeat asperiores praesentium sit nesciunt distinctio molestias
-                            rerum animi consectetur, id quasi quia neque! Architecto quibusdam accusantium expedita totam vitae
-                            veritatis dolorum dolore reiciendis dignissimos sed optio quisquam, maiores corrupti voluptates amet ex
-                            quod, voluptas illum nobis. Nostrum esse enim nemo expedita? Sed cupiditate molestias maxime, nesciunt
+                        xpedita? Sed cupiditate molestias maxime, nesciunt
                             placeat sint exercitationem nobis commodi doloribus deserunt quod debitis optio dolores facilis!
                         </p>
                     </div>
@@ -129,13 +115,7 @@ const About = () => {
                         amet odit recusandae quae hic dolores eligendi dicta quidem et debitis? Nobis sed eos quasi sit, consectetur
                         ipsa eius repellat nemo in iure doloribus aspernatur reiciendis ex praesentium quae est. Dolorum deserunt
                         nisi illum voluptate magni at ducimus earum quisquam, eius repudiandae totam sint debitis ullam quod nemo
-                        excepturi odit. Odio doloribus, laudantium vel voluptas rem harum facere quibusdam enim neque fugiat
-                        deleniti, error vitae beatae nemo omnis cupiditate quia aperiam sequi? Quo, accusantium saepe deserunt
-                        impedit repellat amet illum natus odit recusandae dolor sit odio sapiente modi ex nihil officia porro
-                        adipisci et cupiditate fuga dignissimos dolorum? Odit quis pariatur aperiam cupiditate magnam quas! Animi
-                        aliquam voluptas, optio quos, provident amet dolorum dolore incidunt, eos dolor est consequatur enim maxime
-                        tempora quas illo odit. Possimus, totam. Similique, impedit aliquid. Molestias adipisci rerum, illum eius
-                        repellat sequi?
+                        
                     </p>
                 </section>
 
