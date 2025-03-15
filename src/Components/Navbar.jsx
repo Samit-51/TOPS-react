@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { FaBars, FaTimes, FaEnvelope, FaPhone } from 'react-icons/fa'
 
+
 const Navbar = () => {
 
     const hamBurgerRef = useRef();
