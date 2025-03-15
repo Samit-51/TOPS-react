@@ -45,7 +45,6 @@
     line-height: 1.6;
   }
   
-  /* Responsive styles */
   @media (max-width: 768px) {
     .container {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
