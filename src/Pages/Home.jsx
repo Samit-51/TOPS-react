@@ -16,22 +16,44 @@ const images = [
 
 function Home() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [intervalID, setintervalID] = useState(null);
     let [btn, setBtn] = useState(false);
-  
+
+    const resetInterval = () => {
+        if (intervalID) {
+            clearInterval(intervalID);
+        }
+
+        const newIntervalID = setInterval(nextSlide, 2000);
+        setintervalID(newIntervalID);
+    }
+
+    const handledotClick = (dotIndex) => {
+        setCurrentIndex(dotIndex);
+        resetInterval();
+    }
+
     const nextSlide = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
-  
+
     const prevSlide = () => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
     };
-  
-  
+
+
     useEffect(() => {
-      const interval = setInterval(nextSlide, 2000);
-      return () => clearInterval(interval);
+        const interval = setInterval(nextSlide, 2000);
+        setintervalID(interval);
+        return () => {
+            clearInterval(interval);
+            if (intervalID) {
+                clearInterval(intervalID);
+            }
+        }
+
     }, []);
 
     return (
@@ -48,18 +70,19 @@ function Home() {
                             }}
                         >
                             <img src={image} alt={`Slide ${index + 1}`} className="carousel-image" />
-                            
-                            <div className="slide-counter">
-                                {images.map((_, dotIndex) => (
-                                    <span
-                                        key={dotIndex}
-                                        className={`dot ${dotIndex === currentIndex ? "active-dot" : ""}`}
-                                        onClick={() => setCurrentIndex(dotIndex)}
-                                    ></span>
-                                ))}
-                            </div>
                         </div>
                     ))}
+                    {
+                        <div className="slide-counter">
+                            {images.map((_, dotIndex) => (
+                                <span
+                                    key={dotIndex}
+                                    className={`dot ${dotIndex === currentIndex ? "active-dot" : ""}`}
+                                    onClick={() => handledotClick(dotIndex)}
+                                ></span>
+                            ))}
+                        </div>
+                    }
                 </div>
 
                 <button className="prev" onClick={prevSlide}>
@@ -69,7 +92,7 @@ function Home() {
                     ❯
                 </button>
             </div>
-            
+
             <div className="divOne">
                 <div>
                     <h1 className="headingOne">"Education for Discipline and Excellence"</h1>
@@ -92,7 +115,7 @@ function Home() {
 
                     {btn === false ? (
                         <div className="divTwo">
-                            <img src={imageTwo} alt="No Image Found" />           
+                            <img src={imageTwo} alt="No Image Found" />
                             <div className="divfour">
                                 <p className="paraTwo">
                                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
@@ -106,7 +129,7 @@ function Home() {
                         </div>
                     ) : (
                         <div className="divTwo">
-                            <img src={imageTwo} alt="No Image Found" />           
+                            <img src={imageTwo} alt="No Image Found" />
                             <div className="divfour">
                                 <p className="paraTwo">
                                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt

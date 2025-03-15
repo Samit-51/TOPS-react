@@ -2,11 +2,16 @@ import React, { useState, useRef } from "react";
 import { FaBars, FaTimes, FaEnvelope, FaPhone } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 const Navbar = () => {
-  const hamBurgerRef = useRef();
 
-  const toggleHamburger = () => {
-    hamBurgerRef.current.classList.toggle("active");
-  };
+
+
+    const hamBurgerRef = useRef();
+
+    const toggleHamburger = () => {
+        hamBurgerRef.current.classList.toggle('active');
+    };
+    
+
 
   return (
     <header>
@@ -68,7 +73,7 @@ const Navbar = () => {
             </li>
             <li>
               
-            <a href="#">About</a>
+                <Link to = '/About'>About</Link>
             </li>
             <li>
               
