@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className="links">
                         <ul>
                             <li>
-                                <a href="#">Gallary</a>
+                                <Link to={'/gallery'}>Gallery</Link>
                             </li>
                             <li>
                                 <a href="#">Entrance Form</a>
