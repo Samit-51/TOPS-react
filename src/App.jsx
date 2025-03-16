@@ -5,7 +5,7 @@ import Academics from "./Pages/Academics";
 import './App.css'
 import Contact from './Pages/Contact'
 import Home from './Pages/Home/Home'
-import About from './Pages/About'
+import About from './Pages/About/About'
 import Events from './Pages/Events'
 import OurServices from "./Pages/OurServices";
 import Gallery from "./Pages/Gallery/Gallery";
