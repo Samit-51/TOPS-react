@@ -150,10 +150,10 @@ const Navbar = () => {
                             <a href="#">News and Notice</a>
                         </li>
                         <li>
-                            <Link to={"/events"}>Events</Link>
+                            <Link to="/events">Events</Link>
                         </li>
                         <li>
-                            <a href="#">Our services</a>
+                            <Link to="/ourservices">Our services</Link>
                         </li>
                         <li>
                             <Link to={"/contact"}>Contact us</Link>
