@@ -68,15 +68,15 @@ const Footer = () => {
         <div className="footer-section">
           <h3>PGPEB School</h3>
           <div className="social-icons">
-            <a href="#"><FaFacebook></FaFacebook></a>
+            <a href="https://www.facebook.com/topsschool"><FaFacebook></FaFacebook></a>
             <a href="#"><FaInstagram></FaInstagram></a>
             <a href="#"><FaYoutube></FaYoutube></a>
             <a href="#"><FaTwitter></FaTwitter></a>
           </div>
           <h4>Address</h4>
-          <p>Somewhere, Near</p>
+          <p>Pokhara-10, Ramghat</p>
           <h4>Call Us</h4>
-          <p>01-7878787<br />01-7979797</p>
+          <p>061-578382</p>
         </div>
         <div className="footer-section">
           <h3>Our Services</h3>
@@ -109,9 +109,9 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p><FaEnvelope className='contact-icon'></FaEnvelope> info@tops.edu.np</p>
-          <p><FaPhone className='contact-icon'></FaPhone> 01-7878787</p>
-          <p><FaMap className='contact-icon'></FaMap> Thapathana, Parbhat</p>
+          <p><FaEnvelope className='contact-icon'></FaEnvelope> topsenglishschool@gmail.com</p>
+          <p><FaPhone className='contact-icon'></FaPhone> 061-578382</p>
+          <p><FaMap className='contact-icon'></FaMap> Pokhara-19, Ramghat</p>
         </div>
       </div>
       <div className="copyright">

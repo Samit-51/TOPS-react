@@ -1,16 +1,16 @@
 import React from 'react';
-import Footer from './Components/Footer'
-import './About.css'
+import Footer from '../Components/Footer'
+import styles from './About.module.css'
 
 const About = () => {
     return (
         <>
-            <div className="about-container">
+            <div className={styles.aboutContainer}>
                 {/* Index Section */}
-                <section className="index">
-                    <div className="img">
+                <section className={styles.index}>
+                    <div className={styles.img}>
                         <img src="https://placehold.co/1920x1080" alt="Banner" />
-                        <div class="custom-shape-divider-bottom-1740212333">
+                        <div className= {styles.customShapeDividerBottom1740212333}>
                             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                                 preserveAspectRatio="none">
                                 <path
@@ -20,20 +20,10 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-
-                {/* Navigation Links */}
-                <div className="secondary-links">
-                    <ul>
-                        <li><a href="#principle-msg">Principle's message</a></li>
-                        <li><a href="#chairman-msg">Chairman's message</a></li>
-                        <li><a href="#know-us">Know us</a></li>
-                        <li><a href="#our-goals">Our goals</a></li>
-                    </ul>
-                </div>
-
-                <section className="principle-msg" id="principle-msg">
+                
+                <section className={styles.principleMsg} id="principle-msg">
                     <h1>Principle's Message</h1>
-                    <div className="msg">
+                    <div className={styles.msg}>
                         <img src="https://placehold.co/400x400" alt="Principle" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id sit corrupti qui fuga, hic,
@@ -54,14 +44,14 @@ const About = () => {
                             dolores cumque asperiores voluptatem. Dolores similique necessitatibus minima? Rem veritatis explicabo
                             dignissimos provident quidem eaque. Obcaecati vero ea odio officia libero magnam voluptate animi ex
                             mollitia tenetur ad cupiditate iusto quos quae nostrum voluptatibus earum, illo temporibus. Molestiae
-                           debitis optio dolores facilis!
+                            debitis optio dolores facilis!
                         </p>
                     </div>
                 </section>
 
-                <section className="chairman-msg" id="chairman-msg">
+                <section className={styles.chairmanMsg} id="chairman-msg">
                     <h1>Chairman's Message</h1>
-                    <div className="msg">
+                    <div className={styles.msg}>
                         <img src="https://placehold.co/400x400" alt="Chairman" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id sit corrupti qui fuga, hic,
@@ -82,13 +72,13 @@ const About = () => {
                             dolores cumque asperiores voluptatem. Dolores similique necessitatibus minima? Rem veritatis explicabo
                             dignissimos provident quidem eaque. Obcaecati vero ea odio officia libero magnam voluptate animi ex
                             mollitia tenetur ad cupiditate iusto quos quae nostrum voluptatibus earum, illo temporibus. Molestiae
-                        xpedita? Sed cupiditate molestias maxime, nesciunt
+                            xpedita? Sed cupiditate molestias maxime, nesciunt
                             placeat sint exercitationem nobis commodi doloribus deserunt quod debitis optio dolores facilis!
                         </p>
                     </div>
                 </section>
 
-                <section className="know-us" id="know-us">
+                <section className={styles.knowUs} id="know-us">
                     <h1>Know us</h1>
                     <img src="https://placehold.co/1080x600" alt="About us" />
                     <p>
@@ -114,11 +104,11 @@ const About = () => {
                         amet odit recusandae quae hic dolores eligendi dicta quidem et debitis? Nobis sed eos quasi sit, consectetur
                         ipsa eius repellat nemo in iure doloribus aspernatur reiciendis ex praesentium quae est. Dolorum deserunt
                         nisi illum voluptate magni at ducimus earum quisquam, eius repudiandae totam sint debitis ullam quod nemo
-                        
+
                     </p>
                 </section>
 
-                <section className="our-goals" id="our-goals">
+                <section className={styles.ourGoals} id="our-goals">
                     <h1>Our Goals</h1>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae numquam fugit doloremque cupiditate

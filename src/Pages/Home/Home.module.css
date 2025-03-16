@@ -13,7 +13,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #2c5e1a;
+  color: var(--nav-colour);
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -25,21 +25,21 @@ p {
 }
 
 /* Carousel Styles */
-.carousel-container {
+.carouselContainer {
   position: relative;
   width: 100%;
-  height: 76vh;
+  height: 90vh;
   overflow: hidden;
 }
 
-.carousel-wrapper {
+.carouselWrapper {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.carousel-slide {
+.carouselSlide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -49,13 +49,15 @@ p {
   justify-content: center;
 }
 
-.carousel-image {
+.carouselImage {
   width: 100%;
   height: 100%;
+  object-position: center;
   object-fit: cover;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -82,11 +84,12 @@ p {
   right: 20px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.slide-counter {
+.slideCounter {
   position: absolute;
   bottom: 20px;
   display: flex;
@@ -104,7 +107,7 @@ p {
   cursor: pointer;
 }
 
-.active-dot {
+.activeDot {
   background-color: #717171;
 }
 
@@ -158,7 +161,7 @@ p {
 
 .headingTwo h1 {
   font-size: 3rem;
-  color: #2c5e1a;
+  color: var(--nav-colour);
 }
 
 .divTwo {
@@ -213,7 +216,7 @@ p {
 }
 
 .btndv button {
-  background: #2c5e1a;
+  background: var(--nav-colour);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -229,32 +232,32 @@ p {
 }
 
 .btndv button:hover {
-  background: #4caf50;
+  background: var(--nav-colour);
   transform: scale(1.1);
 }
 
-.features-container {
+.featuresContainer {
   text-align: center;
   padding: 50px 20px;
   height: 300px;
 
 }
 
-.features-container h1 {
+.featuresContainer h1 {
   font-size: 2rem;
-  color: #2c5e1a;
+  color: var(--nav-colour);
   margin-bottom: 20px;
-  
+
 }
 
-.features-list {
+.featuresList {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.feature-item {
+.featureItem {
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -264,17 +267,17 @@ p {
   width: 100%;
 }
 
-.feature-item:hover {
+.featureItem:hover {
   transform: translateY(-10px);
 }
 
-.feature-item h3 {
+.featureItem h3 {
   font-size: 1.2rem;
-  color: #2c5e1a;
+  color: var(--nav-colour);
   margin-bottom: 10px;
 }
 
-.feature-item p {
+.featureItem p {
   font-size: 0.9rem;
   color: black;
 }
@@ -286,16 +289,16 @@ p {
     max-width: 450px;
     margin-left: 20px;
   }
-  
+
   .paraOne {
     margin-left: 30px;
     font-size: 1.3rem;
   }
-  
+
   .headingOne {
     font-size: 1.8rem;
   }
-  
+
   .divTwo img {
     width: 300px;
     height: 300px;
@@ -304,66 +307,67 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 992px) {
-  .carousel-container {
+  .carouselCtainer {
     height: 400px;
   }
-  
+
   .divOne {
     flex-direction: column;
     padding: 30px;
   }
-  
+
   .imageOne img {
     margin-left: 0;
     margin-top: 30px;
     max-width: 100%;
   }
-  
+
   .paraOne {
     margin-left: 0;
     max-width: 100%;
     text-align: center;
   }
-  
+
   .headingOne {
     text-align: center;
     margin-left: 0;
   }
-  
+
   .middiv {
     padding: 40px 20px;
     margin: 40px 15px;
   }
-  
+
   .headingTwo h1 {
     font-size: 2.5rem;
   }
-  
+
   .divTwo {
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .divTwo img {
     width: 250px;
     height: 250px;
   }
-  
+
   .divfour {
     padding-left: 0;
     text-align: center;
   }
-  
+
   .paraTwo {
     font-size: 1.3rem !important;
   }
-  
+
   .btndv {
     flex-direction: row;
     margin-top: 40px;
   }
-  
-  .prev, .next {
+
+  .prev,
+  .next {
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -372,146 +376,148 @@ p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
-  .carousel-container {
+  .carouselCtainer {
     height: 300px;
   }
-  
+
   h1 {
     font-size: 1.8rem;
   }
-  
+
   .headingOne {
     font-size: 1.6rem;
   }
-  
+
   .paraOne {
     font-size: 1.2rem;
   }
-  
+
   .divOne {
     padding: 25px;
     margin: 15px;
   }
-  
+
   .headingTwo h1 {
     font-size: 2rem;
   }
-  
+
   .divTwo img {
     width: 200px;
     height: 200px;
   }
-  
+
   .paraTwo {
     font-size: 1.1rem !important;
   }
-  
-  .principal-name, .principal {
+
+  .principal-name,
+  .principal {
     font-size: 1.2rem !important;
   }
-  
-  .features-list {
+
+  .featuresList {
     gap: 15px;
   }
-  
-  .feature-item {
+
+  .featureItem {
     max-width: 100%;
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .carousel-container {
+  .carouselCtainer {
     height: 250px;
   }
-  
+
   .divOne {
     padding: 20px;
     margin: 10px;
   }
-  
+
   .headingOne {
     font-size: 1.4rem;
   }
-  
+
   .paraOne {
     font-size: 1rem;
   }
-  
+
   .middiv {
     padding: 30px 15px;
     margin: 30px 10px;
   }
-  
+
   .headingTwo h1 {
     font-size: 1.8rem;
   }
-  
+
   .paraTwo {
     font-size: 1rem !important;
   }
-  
+
   .btndv {
     gap: 15px;
   }
-  
+
   .btndv button {
     padding: 10px 15px;
     font-size: 0.9rem;
   }
-  
-  .prev, .next {
+
+  .prev,
+  .next {
     width: 35px;
     height: 35px;
     font-size: 14px;
   }
-  
+
   .prev {
     left: 10px;
   }
-  
+
   .next {
     right: 10px;
   }
-  
+
   .dot {
     height: 8px;
     width: 8px;
     margin: 0 3px;
   }
-  
-  .features-container {
+
+  .featuresContainer {
     padding: 30px 15px;
   }
-  
-  .features-container h1 {
+
+  .featuresContainer h1 {
     font-size: 1.7rem;
   }
 }
 
 /* Very small devices (small phones, 400px and down) */
 @media only screen and (max-width: 400px) {
-  .carousel-container {
+  .carouselCtainer {
     height: 200px;
   }
-  
+
   .headingOne {
     font-size: 1.2rem;
   }
-  
+
   .paraOne {
     font-size: 0.9rem;
   }
-  
+
   .headingTwo h1 {
     font-size: 1.5rem;
   }
-  
+
   .btndv {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .dot {
     height: 6px;
     width: 6px;

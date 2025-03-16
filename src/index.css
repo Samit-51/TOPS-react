@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 :root {
-    --nav-colour: rgb(41, 131, 31);
+    --nav-colour: #DC143C;
 }
 
 * {
@@ -24,17 +24,12 @@ body,
 
 
 header {
-    position: sticky;
     padding: 1rem clamp(10px, 7vw, 2rem);
-    top: 0;
-    background: rgb(41, 131, 31);
+    background: var(--nav-colour);
     width: 100%;
     z-index: 9;
 }
 
-svg {
-    fill: #eef;
-}
 
 .top-nav {
     display: flex;
@@ -67,6 +62,8 @@ svg {
 nav a {
     font-size: 18px;
 }
+
+
 
 .links,
 .main-links {
@@ -177,35 +174,35 @@ nav a {
 }
 
 .main-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.top {
-    width: 100%;
+    position: sticky;
+    padding: 1rem 2.25rem;
+    background: var(--nav-colour);
+    top: 0;
+    z-index: 9999;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .logo {
-    margin-top: 20px;
     height: 70px;
-    width: 100%;
     display: flex;
     gap: 20px;
     align-items: center;
-    justify-content: center;
     transition: all .6s;
 }
+
 
 .logo img {
     border-radius: 50%;
 }
 
 .logo h1 {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    color: #fff;
     font-size: 24px;
     transition: all .6s;
 }
@@ -224,7 +221,7 @@ nav a {
 
 /* Footer Styles */
 .footer {
-    background-color: #026b1a;
+    background-color: var(--nav-colour);
     color: white;
     padding: 40px 20px;
     font-family: 'Arial', sans-serif;
