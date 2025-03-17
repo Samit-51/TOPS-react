@@ -76,6 +76,7 @@ const eventsData = {
     upcoming: [
         {
             id: 1,
+            lableClass: "lableupcoming",
             title: "Science Expedition",
             date: "March 15, 2025",
             location: "National Science Museum",
@@ -87,6 +88,7 @@ const eventsData = {
         },
         {
             id: 2,
+            lableClass: "lableupcoming",
             title: "Parent-Teacher Conference",
             date: "March 20-21, 2025",
             location: "School Classrooms",
@@ -98,6 +100,7 @@ const eventsData = {
         },
         {
             id: 3,
+            lableClass: "lableupcoming",
             title: "Annual School Day Celebration",
             date: "March 30, 2025",
             location: "School Auditorium",
@@ -115,11 +118,11 @@ const EventCard = ({ event, category }) => {
     return (
         <div className={styles.eventCard} style={{ position: 'relative' }}>
             {category === "ongoing" ? (
-                <span className={styles["eventlable-lableongoing"]}>{labelText}</span>
+                <span className={`${styles.eventlable} ${styles.lableongoing}`}>{labelText}</span>
             ) : category === "recent" ? (
-                <span className={styles["eventlable-lablerecent"]}>{labelText}</span>
+                <span className={`${styles.eventlable} ${styles.lablerecent}`}>{labelText}</span>
             ) : (
-                <span className={styles["eventlable-lableupcoming"]}>{labelText}</span>
+                <span className={`${styles.eventlable} ${styles.lableupcoming}`}>{labelText}</span>
             )}
             <img src={event.image} alt={event.imageAlt} />
             <div className={styles.eventCardContent}>
