@@ -1,8 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
 import Footer from '../../Components/Footer'
-=======
->>>>>>> 74563c1cef386b5eaa8922cd6f7baa45ce255d69
+
 import styles from './About.module.css'
 
 const About = () => {

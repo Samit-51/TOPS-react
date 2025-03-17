@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
  
 import Footer from "./Components/Footer/";
 
-import Footer from "./Components/Footer";
+
  
 import Academics from "./Pages/Academics/Academics";
 import './App.css'
@@ -13,6 +13,7 @@ import About from './Pages/About/About'
 import Events from './Pages/Events/Events'
 import OurServices from "./Pages/OurServices/OurServices";
 import News from "./Pages/News/News";
+import Gallery from "./Pages/Gallery/Gallery";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         
 
        
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery/>} />
       </Routes>
      </Router>
       <Footer />
