@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f3f6f4;
-  color: #2c3e50;
+  background-color: #FFFFFF;
+  color: #808080;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: var(--nav-colour);
+  color: #DC143C;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -86,7 +86,7 @@ p {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
 }
 
 .slideCounter {
@@ -101,14 +101,14 @@ p {
   height: 12px;
   width: 12px;
   margin: 0 5px;
-  background-color: #bbb;
+  background-color: #808080;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
 }
 
 .activeDot {
-  background-color: #717171;
+  background-color: #DC143C;
 }
 
 /* Main Content Styles */
@@ -116,25 +116,27 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #75c0a7, #2bcf1c);
-  color: white;
+  background: linear-gradient(135deg, #FFFFFF, #f0f0f0);
+  color: #808080;
   padding: 50px;
   border-radius: 10px;
   margin: 20px;
   gap: 30px;
+  border: 1px solid #e0e0e0;
 }
 
 .headingOne {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #DC143C;
 }
 
 .paraOne {
   font-size: 1.5rem;
   max-width: 500px;
   margin-left: 70px;
-  color: black;
+  color: #808080;
 }
 
 .imageOne img {
@@ -147,11 +149,12 @@ p {
 }
 
 .middiv {
-  background-color: #e8f5e9;
+  background-color: #FFFFFF;
   padding: 60px;
   margin: 90px 20px;
   border-radius: 10px;
   text-align: center;
+  border: 1px solid #e0e0e0;
 }
 
 .lowdiv {
@@ -161,7 +164,7 @@ p {
 
 .headingTwo h1 {
   font-size: 3rem;
-  color: var(--nav-colour);
+  color: #DC143C;
 }
 
 .divTwo {
@@ -190,21 +193,24 @@ p {
   font-weight: 700;
   font-size: 1.5rem !important;
   margin-bottom: 0px !important;
+  color: #DC143C;
 }
 
 .principal {
   font-size: 1.5rem !important;
   margin-top: 0px !important;
+  color: #808080;
 }
 
 .paraTwo {
   font-size: 1.5rem !important;
   line-height: 1.8;
+  color: #808080;
 }
 
 .divfour p {
   font-size: 1rem;
-  color: #333;
+  color: #808080;
   margin-bottom: 10px;
 }
 
@@ -216,7 +222,7 @@ p {
 }
 
 .btndv button {
-  background: var(--nav-colour);
+  background: #DC143C;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -227,27 +233,30 @@ p {
 }
 
 .chairman {
-  background-color: white !important;
-  color: black !important;
+  background-color: #FFFFFF !important;
+  color: #DC143C !important;
+  border: 1px solid #DC143C !important;
 }
 
 .btndv button:hover {
-  background: var(--nav-colour);
+  background: #b01030;
   transform: scale(1.1);
+}
+
+.chairman:hover {
+  background-color: #f8f8f8 !important;
 }
 
 .featuresContainer {
   text-align: center;
   padding: 50px 20px;
   height: 300px;
-
 }
 
 .featuresContainer h1 {
   font-size: 2rem;
-  color: var(--nav-colour);
+  color: #DC143C;
   margin-bottom: 20px;
-
 }
 
 .featuresList {
@@ -258,32 +267,32 @@ p {
 }
 
 .featureItem {
-  background: white;
+  background: #FFFFFF;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
   max-width: 300px;
   width: 100%;
+  border: 1px solid #e0e0e0;
 }
 
 .featureItem:hover {
   transform: translateY(-10px);
+  border-color: #DC143C;
 }
 
 .featureItem h3 {
   font-size: 1.2rem;
-  color: var(--nav-colour);
+  color: #DC143C;
   margin-bottom: 10px;
 }
 
 .featureItem p {
   font-size: 0.9rem;
-  color: black;
+  color: #808080;
 }
 
-/* Responsive Styles */
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
   .imageOne img {
     max-width: 450px;
@@ -305,9 +314,9 @@ p {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (max-width: 992px) {
-  .carouselCtainer {
+  .carouselContainer {
     height: 400px;
   }
 
@@ -374,9 +383,9 @@ p {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (max-width: 768px) {
-  .carouselCtainer {
+  .carouselContainer {
     height: 300px;
   }
 
@@ -424,9 +433,8 @@ p {
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .carouselCtainer {
+  .carouselContainer {
     height: 250px;
   }
 
@@ -495,9 +503,9 @@ p {
   }
 }
 
-/* Very small devices (small phones, 400px and down) */
+
 @media only screen and (max-width: 400px) {
-  .carouselCtainer {
+  .carouselContainer {
     height: 200px;
   }
 
@@ -522,5 +530,80 @@ p {
     height: 6px;
     width: 6px;
     margin: 0 2px;
+  }
+}
+
+.featuresContainer {
+  text-align: center;
+  padding: 50px 20px;
+  height: auto; 
+}
+
+.featuresContainer h1 {
+  font-size: 2rem;
+  color: #DC143C;
+  margin-bottom: 30px;
+}
+
+.featuresList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureItem {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.featureItem:hover {
+  transform: translateY(-10px);
+  border-color: #DC143C;
+}
+
+.featureItem h3 {
+  font-size: 1.2rem;
+  color: #DC143C;
+  margin-bottom: 10px;
+}
+
+.featureItem p {
+  font-size: 0.9rem;
+  color: #808080;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 992px) {
+  .featuresContainer {
+    padding: 40px 15px;
+  }
+  
+  .featuresList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .featuresContainer {
+    padding: 30px 10px;
+  }
+  
+  .featuresList {
+    grid-template-columns: 1fr;
+  }
+  
+  .featureItem {
+    padding: 15px;
   }
 }

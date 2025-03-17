@@ -144,10 +144,10 @@ const Navbar = () => {
                         </li>
                         <li>
 
-                            <Link to="/Academics">Academics</Link>
+                            <Link to="/academics">Academics</Link>
                         </li>
                         <li>
-                            <a href="#">News and Notice</a>
+                            <Link to = '/news'>News and Notice</Link>
                         </li>
                         <li>
                             <Link to="/events">Events</Link>
@@ -156,7 +156,7 @@ const Navbar = () => {
                             <Link to="/ourservices">Our services</Link>
                         </li>
                         <li>
-                            <Link to={"/contact"}>Contact us</Link>
+                            <Link to="/contactus">Contact us</Link>
                         </li>
                         <span className="ham-burger">
                             <button className="ham-burger-button" onClick={toggleHamburger}>

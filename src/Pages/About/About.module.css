@@ -7,8 +7,10 @@ section {
 
 .aboutContainer {
   background-color: #FFFFFF;
-  color: #000000;
+  color: #808080;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .index {
@@ -36,7 +38,6 @@ section {
   width: 100%;
   height: 100%;
   background: rgba(220, 20, 60, 0.1);
-  /* Soft red overlay */
   z-index: 1;
 }
 
@@ -80,11 +81,11 @@ section {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  color: #000000;
-  /* Black text */
+  color: #808080;
   background-color: #FFFFFF;
   padding: 2rem 0;
   position: relative;
+  width: 100%;
 }
 
 .principleMsg::before {
@@ -116,6 +117,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.2);
+  width: 100%;
 }
 
 section h1::before {
@@ -127,7 +129,6 @@ section h1::before {
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(90deg, rgba(220, 20, 60, 0) 0%, rgba(220, 20, 60, 1) 100%);
-  /* Gradient underline */
   border-radius: 4px;
 }
 
@@ -141,6 +142,7 @@ section h1::before {
   border-radius: 8px;
   transition: transform 0.3s ease;
   border-top: 3px solid #DC143C;
+  box-sizing: border-box;
 }
 
 .msg:hover {
@@ -169,8 +171,7 @@ section h1::before {
 .msg p {
   text-align: justify;
   line-height: 1.8;
-  color: #333333;
-  /* Dark grey text */
+  color: #808080;
   font-size: 1.05rem;
 }
 
@@ -186,7 +187,8 @@ section h1::before {
   align-items: center;
   background: rgba(220, 20, 60, 0.05);
   padding: 2rem 0;
-  color: #000000;
+  color: #808080;
+  width: 100%;
 }
 
 .knowUs img {
@@ -205,7 +207,7 @@ section h1::before {
 
 .knowus p,
 .ourGoals p {
-  color: #000000;
+  color: #808080;
   text-align: justify;
   line-height: 1.8;
   padding: clamp(15px, 5vw, 3rem);
@@ -219,6 +221,7 @@ section h1::before {
   background: rgba(220, 20, 60, 0.05);
   position: relative;
   padding: 2rem 0;
+  width: 100%;
 }
 
 .ourGoals::before {
@@ -253,14 +256,39 @@ section h1::before {
   color: #DC143C;
 }
 
+@media only screen and (min-width: 1200px) {
+  .msg {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 993px) {
+  .msg {
+    width: 85%;
+  }
+  
+  .index {
+    height: 90vh;
+  }
+}
+
+
 @media only screen and (max-width: 992px) {
   .msg {
     width: 90%;
     background: #FFFFFF;
   }
 
-  .know-us img {
+  .knowUs img {
     width: 90%;
+  }
+  
+  .index {
+    height: 80vh;
+  }
+  
+  .customShapeDividerBottom1740212333 svg {
+    height: 80px;
   }
 }
 
@@ -269,6 +297,8 @@ section h1::before {
     margin: 0 auto 20px;
     float: none;
     display: block;
+    height: clamp(100px, 20vw, 250px);
+    width: clamp(100px, 20vw, 250px);
   }
 
   .chairmanMsg .msg img {
@@ -286,6 +316,18 @@ section h1::before {
 
   .ham-burger {
     display: block;
+  }
+  
+  .index {
+    height: 70vh;
+  }
+  
+  .aboutContainer h1 {
+    font-size: clamp(1.3rem, 8vw, 2.8rem);
+  }
+  
+  .customShapeDividerBottom1740212333 svg {
+    height: 60px;
   }
 }
 
@@ -307,5 +349,78 @@ section h1::before {
 
   section h1::before {
     height: 3px;
+    width: 80%;
+  }
+  
+  .index {
+    height: 60vh;
+  }
+  
+  .customShapeDividerBottom1740212333 svg {
+    height: 40px;
+  }
+  
+  .principleMsg,
+  .chairmanMsg {
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .msg {
+    width: 95%;
+    padding: 0.8rem;
+  }
+  
+  .msg img {
+    height: clamp(80px, 18vw, 200px);
+    width: clamp(80px, 18vw, 200px);
+    margin: 0 auto 15px;
+  }
+  
+  .msg p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .knowUs p,
+  .ourGoals p {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+  
+  .index {
+    height: 50vh;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  .customShapeDividerBottom1740212333 svg {
+    height: 30px;
+  }
+}
+
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+  .index {
+    height: 120vh;
+  }
+  
+  .msg {
+    padding: 1rem;
+  }
+  
+  .msg img {
+    height: clamp(80px, 15vw, 200px);
+    width: clamp(80px, 15vw, 200px);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
   }
 }

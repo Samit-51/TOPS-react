@@ -1,3 +1,54 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
+    color: #808080;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #DC143C;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #808080;
+}
+
+.divOne {
+    background: linear-gradient(135deg, #DC143C, #808080);
+    color: white;
+}
+
+.paraOne {
+    color: #FFFFFF;
+}
+
+.middiv {
+    background-color: #808080;
+    color: #FFFFFF;
+}
+
+.featureItem {
+    background: #FFFFFF;
+    color: #808080;
+}
+
+.featureItem h3 {
+    color: #DC143C;
+}
+
+.btndv button {
+    background: #DC143C;
+    color: white;
+}
+
 .eventsContainer {
     max-width: 1200px;
     margin: 0 auto;
@@ -10,10 +61,10 @@
 
 .eventsSection h2 {
     font-size: 28px;
-    color: #2c3e50;
+    color: #808080;
     margin-bottom: 30px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid #DC143C;
     display: inline-block;
 }
 
@@ -43,18 +94,18 @@
 
 .eventCardContent {
     padding: 20px;
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 .eventCardContent h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: #808080;
 }
 
 .eventCardContent p {
     font-size: 14px;
-    color: #555;
+    color: #808080;
     margin-bottom: 15px;
 }
 
@@ -62,32 +113,32 @@
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: #7f8c8d;
+    color: #808080;
     margin-bottom: 10px;
 }
 
 .eventDate i {
     margin-right: 8px;
-    color: #3498db;
+    color: #DC143C;
 }
 
 .eventLocation {
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: #7f8c8d;
+    color: #808080;
     margin-bottom: 15px;
 }
 
 .eventLocation i {
     margin-right: 8px;
-    color: #e74c3c;
+    color: #DC143C;
 }
 
 .readMore {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #3498db;
+    background-color: #DC143C;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -96,10 +147,11 @@
 }
 
 .readMore:hover {
-    background-color: #2980b9;
+    background-color: #FFFFFF;
+    color: #DC143C;
+    border: #DC143C 1px solid;
 }
 
-/* Label styles for ongoing events */
 .eventlable {
     position: absolute;
     top: 15px;
@@ -112,23 +164,54 @@
 }
 
 .lableongoing {
-    background-color: #e74c3c;
+    background-color: #DC143C;
     color: white;
 }
 
 .lableupcoming {
-    background-color: #2ecc71;
+    background-color: #808080;
     color: white;
 }
 
 .lablerecent {
-    background-color: #f39c12;
+    background-color: #808080;
     color: white;
 }
 
-/* For responsive design */
 @media (max-width: 768px) {
     .eventCards {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 15px;
+    }
+
+    .eventsSection h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .eventCardContent h3 {
+        font-size: 18px;
+    }
+
+    .eventCardContent p {
+        font-size: 13px;
+    }
+
+    .eventDate i, .eventLocation i {
+        font-size: 16px;
+    }
+
+    .readMore {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .eventsContainer {
+        padding: 20px 10px;
+    }
+    
+    .btndv button {
+        font-size: 14px;
+        padding: 10px 20px;
     }
 }

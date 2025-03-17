@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@300;400;500&display=swap');
+
+body {
+    background: #FFFFFF;
+    color: #808080;
+    font-family: 'Inter', sans-serif;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+h1, section h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #DC143C;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1::after, section h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #DC143C;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+h1:hover::after {
+    width: 120px;
+}
+
+.contactSection {
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 4rem clamp(1rem, 7vw, 4rem);
+    background: linear-gradient(to bottom, #f8f8f8, #e6e6e6);
+    flex-wrap: wrap;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contactSection .formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 2 1;
+    flex-basis: 500px;
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer h1 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    color: #DC143C;
+    font-weight: 700;
+}
+
+.contactSection form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "Name E-mail"
+        "Subject Ph"
+        "ta ta";
+    gap: 20px;
+    padding: 20px;
+}
+
+input,
+textarea {
+    font-family: 'Inter', sans-serif;
+    color: #DC143C;
+    background: none;
+    outline: none;
+    min-height: 50px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 3px solid #DC143C;
+    transition: border-bottom 0.3s ease-in-out, box-shadow 0.3s;
+    padding: 5px;
+    width: 100%;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-bottom: 3px solid #808080;
+    box-shadow: 0px 5px 10px rgba(220, 20, 60, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #808080;
+}
+
+.formContainer button {
+    width: fit-content;
+    padding: 15px 40px;
+    background: #DC143C;
+    color: #FFFFFF;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0px 5px 15px rgba(220, 20, 60, 0.3);
+}
+
+.formContainer button:hover {
+    background: #FFFFFF;
+    color: #DC143C;
+    border: 2px solid #DC143C;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(220, 20, 60, 0.5);
+}
+
+.formContainer button:active {
+    transform: scale(0.95);
+}
+
+.info {
+    color: #DC143C;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.info h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #808080;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.info h2:hover {
+    color: #DC143C;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.info h1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    white-space: nowrap;
+    font-size: clamp(1.625rem, 7vw, 3.25rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.mapSection {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.mapTitle {
+    color: #DC143C;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 3px 8px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    height: 60px;
+    margin-bottom: 50px;
+}
+
+.mapTitle:hover {
+    background-color: #DC143C;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactSection form {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "Name"
+            "E-mail"
+            "Subject"
+            "Ph"
+            "ta";
+    }
+
+    .formContainer input,
+    .formContainer textarea {
+        font-size: 14px;
+    }
+
+    .formContainer button {
+        padding: 12px 30px;
+    }
+
+    .mapContainer iframe {
+        height: 300px;
+        width: 800px!important;
+    }
+    
+    .info {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contactSection {
+        padding: 2rem 1rem;
+    }
+    
+    .contactSection .formContainer {
+        padding: 25px;
+    }
+    
+    .mapTitle {
+        height: auto;
+        padding: 10px;
+    }
+}
