@@ -1,51 +1,62 @@
+/* Gallery.module.css */
+
 .galleryContainer {
-    min-height: 100vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 1.25rem;
-    padding: 2rem 3rem;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFF;
 }
 
 .buttonContainer {
-    width: 100%;
+    margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
-.buttonContainer button {
+.button {
+    background-color: #808080;
+    color: #FFFFFF;
+    padding: 10px 20px;
     border: none;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all .3s;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
-button.activeButton {
-    color: #fff;
-    background: var(--nav-colour);
+.button:hover, .activeButton {
+    background-color: #862B33;
 }
 
 .photoGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
 }
 
-.photoGrid img {
-    transition: all .3s;
-    max-width: 100%;
+.imgContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.photoGrid img:hover {
-    scale: 1.09;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.imgContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
 }
 
-.photoGrid img.show {
-    opacity: 1;
-    transform: scale(1);
+.imgContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.imgContainer:hover img {
+    transform: scale(1.1);
 }
