@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const path = require('path');
 const cors = require('cors');
-const { redirect } = require('react-router-dom');
 const app = express();
 
 app.use(express.json());
@@ -22,26 +21,27 @@ const connectDB = async () => {
 };
 
 
-app.use(express.urlencoded({ extended: true })); 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public', 'loginscreen')));
 app.use(express.static(path.join(__dirname, 'public', 'adminhub')));
 
+
+app.get('/dashboard', (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, 'public', 'adminhub', 'index.html'));
+});
 
 app.get('/login', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, 'public', 'loginscreen', 'index.html'));
 });
 
 app.post('/login', (req, res) => {
-    const {username, password} = req.body;
-    if(username === "admin" && password === "password"){
-        res.status(200).send({redirect: "/dashboard"});
-    }else{
+    const { username, password } = req.body;
+    if (username === "admin" && password === "password") {
+        res.status(200).send({ redirect: "/dashboard" });
+    } else {
         res.status(500).send("Invalid credentials");
     }
 });
 
-app.get('/dashboard', (req, res) => {
-});
 
 connectDB();
