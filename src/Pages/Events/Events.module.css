@@ -9,7 +9,7 @@ body {
 
 h1 {
     font-size: 2rem;
-    color: #DC143C;
+    color: #862B33;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -22,7 +22,7 @@ p {
 }
 
 .divOne {
-    background: linear-gradient(135deg, #DC143C, #808080);
+    background: linear-gradient(135deg, #862B33, #808080);
     color: white;
 }
 
@@ -41,11 +41,11 @@ p {
 }
 
 .featureItem h3 {
-    color: #DC143C;
+    color: #862B33;
 }
 
 .btndv button {
-    background: #DC143C;
+    background: #862B33;
     color: white;
 }
 
@@ -64,7 +64,7 @@ p {
     color: #808080;
     margin-bottom: 30px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #DC143C;
+    border-bottom: 3px solid #862B33;
     display: inline-block;
 }
 
@@ -119,7 +119,7 @@ p {
 
 .eventDate i {
     margin-right: 8px;
-    color: #DC143C;
+    color: #862B33;
 }
 
 .eventLocation {
@@ -132,13 +132,13 @@ p {
 
 .eventLocation i {
     margin-right: 8px;
-    color: #DC143C;
+    color: #862B33;
 }
 
 .readMore {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #DC143C;
+    background-color: #862B33;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -148,8 +148,8 @@ p {
 
 .readMore:hover {
     background-color: #FFFFFF;
-    color: #DC143C;
-    border: #DC143C 1px solid;
+    color: #862B33;
+    border: #862B33 1px solid;
 }
 
 .eventlable {
@@ -164,7 +164,7 @@ p {
 }
 
 .lableongoing {
-    background-color: #DC143C;
+    background-color: #862B33;
     color: white;
 }
 

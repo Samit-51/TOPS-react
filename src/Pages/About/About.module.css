@@ -107,7 +107,7 @@ section {
 }
 
 .aboutContainer h1 {
-  color: #DC143C;
+  color: #862B33;
   text-align: center;
   position: relative;
   font-size: clamp(1.5rem, 10vw, 3.5rem);
@@ -141,7 +141,7 @@ section h1::before {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   transition: transform 0.3s ease;
-  border-top: 3px solid #DC143C;
+  border-top: 3px solid #862B33;
   box-sizing: border-box;
 }
 
@@ -159,13 +159,13 @@ section h1::before {
   border-radius: 50%;
   shape-outside: circle();
   border: 5px solid #FFFFFF;
-  box-shadow: 0 0 0 2px #DC143C, 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0 2px #862B33, 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
 .msg img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 0 2px #DC143C, 0 12px 25px rgba(220, 20, 60, 0.25);
+  box-shadow: 0 0 0 2px #862B33, 0 12px 25px rgba(220, 20, 60, 0.25);
 }
 
 .msg p {
@@ -253,7 +253,7 @@ section h1::before {
 
 ::selection {
   background: rgba(220, 20, 60, 0.2);
-  color: #DC143C;
+  color: #862B33;
 }
 
 @media only screen and (min-width: 1200px) {

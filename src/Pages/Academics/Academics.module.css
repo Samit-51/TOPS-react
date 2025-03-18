@@ -28,20 +28,20 @@
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  border-color: #DC143C;
+  border-color: #862B33;
 }
 
 .card svg {
   width: 60px;
   height: 60px;
   margin-bottom: 20px;
-  color: #DC143C;
+  color: #862B33;
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #DC143C;
+  color: #862B33;
 }
 
 .card p {
