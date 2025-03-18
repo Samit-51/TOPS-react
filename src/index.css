@@ -5,6 +5,7 @@
     --nav-colour: #862B33;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +30,23 @@ header {
     width: 100%;
     z-index: 9;
 }
+header *::selection,
+footer *::selection
+ {
+    background-color: #ffffff;
+    color: #862B33;
+}
 
+.main-links a::selection {
+    background-color: #ffffff;
+    color: #862B33;
+}
+
+.main-links a::selection,
+.logo h1::selection {
+    background-color: #ffffff;
+    color: #862B33;
+}
 
 .top-nav {
     display: flex;
@@ -37,6 +54,8 @@ header {
     justify-content: space-between;
     transition: all .3s;
 }
+
+
 
 .contacts {
     display: flex;
@@ -53,6 +72,11 @@ header {
     align-items: center;
     gap: 10px;
 }
+.ph-number span::selection {
+        background-color: #ffffff;
+        color: #862B33;
+}
+
 
 .top-nav * {
     font-size: .87rem;

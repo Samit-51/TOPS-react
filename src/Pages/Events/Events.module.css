@@ -162,9 +162,15 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+.eventCardContent::selection {
+    background-color: #FFFFFF;
+    color: #862B33;
+}
+
+
 
 .lableongoing {
-    background-color: #862B33;
+    background-color: #808080;
     color: white;
 }
 

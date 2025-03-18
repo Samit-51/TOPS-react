@@ -8,9 +8,11 @@ import img4 from "/src/assets/img4.jpg";
 import img5 from "/src/assets/img5.jpg";
 import imageTwo from "/src/assets/400x400.svg";
 import styles from './Home.module.css';
+import img6 from "/src/assets/img6.jpg";
 
 const images = [
     schoolIMG,
+    img6,
     img1,
     img2,
     img3,
