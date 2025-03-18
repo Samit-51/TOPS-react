@@ -170,17 +170,17 @@ p {
 
 
 .lableongoing {
-    background-color: #808080;
+    background-color: #e74c3c;
     color: white;
 }
 
 .lableupcoming {
-    background-color: #808080;
+    background-color: #2ecc71;
     color: white;
 }
 
 .lablerecent {
-    background-color: #808080;
+    background-color: #f39c12;
     color: white;
 }
 
