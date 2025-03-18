@@ -25,6 +25,7 @@ const connectDB = async () => {
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public', 'loginscreen')));
+app.use(express.static(path.join(__dirname, 'public', 'adminhub')));
 
 
 app.get('/login', (req, res) => {
