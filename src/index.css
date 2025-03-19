@@ -142,7 +142,7 @@ nav a {
     top: 0;
     right: 0;
     transition: all 0.5s;
-    z-index: 3;
+    z-index: 1000;
     transform: translateX(100vw);
     background: rgb(112, 180, 69);
     overflow: hidden auto;
@@ -202,7 +202,7 @@ nav a {
     padding: 1rem 2.25rem;
     background: var(--nav-colour);
     top: 0;
-    z-index: 9999;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -379,6 +379,8 @@ nav a {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Popup Styles */

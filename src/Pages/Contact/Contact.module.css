@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@300;400;500&display=swap');
 
 body {
-    background: #FFFFFF; /* White background for the outer div */
-    color: #862B33; /* Red text color */
+    background: #FFFFFF; 
+    color: #862B33; 
     font-family: 'Inter', sans-serif;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 h1, section h1 {
     font-family: 'Poppins', sans-serif;
-    color: #862B33; /* Red text color */
+    color: #862B33; 
     text-align: center;
     font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 700;
@@ -23,7 +23,7 @@ h1::after, section h1::after {
     display: block;
     width: 80px;
     height: 4px;
-    background: #862B33; /* Red underline */
+    background: #862B33;
     margin: 10px auto;
     border-radius: 5px;
     transition: width 0.3s ease-in-out;
@@ -34,7 +34,7 @@ h1:hover::after {
 }
 
 section h1 {
-    color: #862B33; /* Red text color */
+    color: #862B33; 
 }
 
 .contactSection {
@@ -43,7 +43,7 @@ section h1 {
     display: flex;
     align-items: center;
     padding: 4rem clamp(1rem, 7vw, 4rem);
-    background: #FFFFFF; /* White background for the contact section */
+    background: #FFFFFF;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -54,7 +54,7 @@ section h1 {
     gap: 40px;
     flex: 2 1;
     flex-basis: 500px;
-    background: #FFFFFF; /* White background for the form container */
+    background: #FFFFFF; 
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
@@ -62,7 +62,7 @@ section h1 {
 
 .formContainer h1 {
     font-size: clamp(2rem, 5vw, 5rem);
-    color: #862B33; /* Red text color */
+    color: #862B33; 
 }
 
 .contactSection form {
@@ -84,13 +84,13 @@ textarea {
 
 input,
 textarea {
-    color: #862B33; /* Red text color */
+    color: #862B33; 
     background: none;
     outline: none;
     min-height: 50px;
     font-size: 16px;
     border: none;
-    border-bottom: 3px solid #862B33; /* Red border */
+    border-bottom: 3px solid #862B33; 
     transition: border-bottom 0.3s ease-in-out, box-shadow 0.3s;
     padding: 5px;
     width: 100%;
@@ -100,42 +100,44 @@ input:hover,
 textarea:hover,
 input:focus,
 textarea:focus {
-    border-bottom: 3px solid #808080; /* Grey border on hover/focus */
+    border-bottom: 3px solid #808080; 
     box-shadow: 0px 5px 10px rgba(220, 20, 60, 0.2);
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #862B33; /* Red placeholder text */
+    color: #862B33; 
 }
 
 .formContainer button {
     width: fit-content;
     padding: 20px 40px;
-    background: #b50427; /* Dark red background */
-    color: #fff; /* White text color */
+    background: #862B33; 
+    color: #fff; 
     font-size: clamp(0.626rem, 2vw, 1.25rem);
     border-radius: 20px;
     margin-left: auto;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Initial box shadow */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .formContainer button:hover {
-    background: #862B33; /* Brighter red on hover */
-    transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0px 8px 15px rgba(220, 20, 60, 0.3); /* Enhanced shadow on hover */
+    background: #DC143C; 
+    transform: translateY(-3px); 
+    border: 2px solid #FFFFFF; 
+    color: #FFFFFF;
+    box-shadow: 0px 8px 15px rgba(220, 20, 60, 0.3); 
 }
 
 .formContainer button:active {
-    transform: translateY(0); /* Reset lift effect on click */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+    transform: translateY(0); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .info {
-    color: #862B33; /* Red text color */
+    color: #862B33; 
     flex: 1 0;
     display: flex;
     flex-direction: column;
@@ -168,10 +170,10 @@ textarea::placeholder {
 }
 
 .mapTitle {
-    color: #862B33; /* Red text color */
+    color: #862B33; 
     font-size: 28px;
     font-weight: bold;
-    background-color: #FFFFFF; /* White background */
+    background-color: #FFFFFF; 
     padding: 3px 8px;
     display: inline-block;
     border-radius: 5px;
@@ -181,8 +183,8 @@ textarea::placeholder {
 }
 
 .mapTitle:hover {
-    background-color: #862B33; /* Red background on hover */
-    color: #FFFFFF; /* White text on hover */
+    background-color: #862B33; 
+    color: #FFFFFF; 
     cursor: pointer;
 }
 

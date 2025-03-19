@@ -144,9 +144,31 @@ section h1::before {
   border-top: 3px solid #862B33;
   box-sizing: border-box;
 }
+.lastmsg {
+  height: 100%;
+  width: 85%;
+  max-width: 1200px;
+  background: #FFFFFF;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border-top: 3px solid #862B33;
+  box-sizing: border-box;
+  margin-left: 100px;
+}
+.lastmsg p{
+  margin:0px!important;
+  width: 100%;
+  padding:0px!important
+}
 
 .msg:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
+}
+.msgg:hover {
+  transform: scale(1.005);
   box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
 }
 
@@ -180,42 +202,74 @@ section h1::before {
   margin: 30px 0 30px 30px;
 }
 
-.knowUs {
-  flex-direction: column;
+
+.msgg{
   display: flex;
-  gap: 2rem;
   align-items: center;
-  background: rgba(220, 20, 60, 0.05);
-  padding: 2rem 0;
+  justify-content: center;
+  gap: 3rem;
   color: #808080;
+  background-color: #FFFFFF;
+  padding: 2rem 0;
+  position: relative;
   width: 100%;
 }
 
-.knowUs img {
-  width: 80%;
-  max-width: 1000px;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-  border: 1px solid rgba(220, 20, 60, 0.05);
-}
 
-.knowUs img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 15px 30px rgba(220, 20, 60, 0.1);
-}
 
-.knowus p,
-.ourGoals p {
-  color: #808080;
-  text-align: justify;
-  line-height: 1.8;
-  padding: clamp(15px, 5vw, 3rem);
-  font-size: 1.05rem;
+.knowUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #FFFFFF;
+  padding: 2rem 0;
+  width: 100%;
+}
+.mssg:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
+}
+.mssg {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; /* Space between image and text */
   width: 85%;
   max-width: 1200px;
-  margin: 0 auto;
+  background: #FFFFFF;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border-top: 3px solid #862B33;
+  box-sizing: border-box;
 }
+
+.mssg img {
+  width: 300px; /* Fixed square size */
+  height: 300px; /* Equal width and height */
+  object-fit: cover; /* Ensures the image stays properly cropped */
+  border-radius: 10px; /* Slight rounded edges */
+  border: 5px solid #FFFFFF;
+  box-shadow: 0 0 0 2px #862B33, 0 8px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.mssg img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px #862B33, 0 12px 25px rgba(220, 20, 60, 0.25);
+}
+
+.mssg p {
+  flex: 1; /* Takes remaining space */
+  text-align: justify;
+  line-height: 1.8;
+  color: #808080;
+  font-size: 1.05rem;
+}
+
+ 
 
 .ourGoals {
   background: rgba(220, 20, 60, 0.05);
@@ -235,12 +289,12 @@ section h1::before {
   z-index: -1;
 }
 
-.knowUs,
+
 .ourGoals {
   position: relative;
 }
 
-.knowUs::after,
+
 .ourGoals::after {
   content: '';
   position: absolute;

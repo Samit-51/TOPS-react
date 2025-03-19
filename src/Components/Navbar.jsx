@@ -32,16 +32,16 @@ const Navbar = () => {
                     <div className="links">
                         <ul>
                             <li>
-                                <Link to={'/gallery'}>Gallery</Link>
+                                <Link to='/gallery'>Gallery</Link>
                             </li>
                             <li>
-                                <a href="#">Entrance Form</a>
+                                <Link to = '/entrance'>Entrance Form</Link>
                             </li>
                             <li>
-                                <a href="#">Magazine </a>
+                                <Link to = 'magazine'>Magazine </Link>
                             </li>
                             <li>
-                                <a href="#">Results</a>
+                                <Link to = 'results'>Results</Link>
                             </li>
                         </ul>
                     </div>
@@ -57,57 +57,57 @@ const Navbar = () => {
                             </button>
                         </li>
                         <li>
-                            <a href="#">Gallary</a>
+                            <Link to = "/gallery">Gallary</Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 1 }}>
+                            <Link to = '/entrance' style={{ "--i": 1 }}>
                                 Entrance Form
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 2 }}>
+                            <Link to = '/magazine' style={{ "--i": 2 }}>
                                 Magazine{" "}
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 3 }}>
+                            <Link to = '/results' style={{ "--i": 3 }}>
                                 Results
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 4 }}>
+                            <Link to = '/' style={{ "--i": 4 }}>
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 5 }}>
+                            <Link to = '/about' style={{ "--i": 5 }}>
                                 About us
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 6 }}>
-                                Admission
-                            </a>
+                            <Link to = '/academics' style={{ "--i": 6 }}>
+                               Academics
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 7 }}>
+                            <Link to = '/news' style={{ "--i": 7 }}>
                                 News and Notice
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 8 }}>
+                            <Link to = '/events' style={{ "--i": 8 }}>
                                 Events
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 9 }}>
+                            <Link to = '/ourservices' style={{ "--i": 9 }}>
                                 Our services
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#" style={{ "--i": 10 }}>
+                            <Link to =  '/contactus' style={{ "--i": 10 }}>
                                 Contact us
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

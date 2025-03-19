@@ -66,7 +66,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-section">
-          <h3>PGPEB School</h3>
+          <h3>TOPS School</h3>
           <div className="social-icons">
             <a href="https://www.facebook.com/topsschool"><FaFacebook></FaFacebook></a>
             <a href="#"><FaInstagram></FaInstagram></a>
@@ -115,7 +115,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; 2025 TOPS School. All Rights Reserved.</p>
+        <p>&copy; 2025 TOPS School. All Rights Reserved. </p>
+        <p>Powered By: BIRTA SOFT</p>
       </div>
       
       <div 

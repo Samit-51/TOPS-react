@@ -147,9 +147,13 @@ p {
 }
 
 .readMore:hover {
-    background-color: #FFFFFF;
-    color: #862B33;
+    background-color: #DC143C;
+    color: #FFFFFF;
     border: #862B33 1px solid;
+}
+.readMore::selection {
+    color: #FFFFFF;
+    background-color: #862B33;
 }
 
 .eventlable {

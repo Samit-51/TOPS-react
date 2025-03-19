@@ -81,8 +81,10 @@ const About = () => {
 
                 <section className={styles.knowUs} id="know-us">
                     <h1>Know us</h1>
-                    <img src="https://placehold.co/1080x600" alt="About us" />
-                    <p>
+                    <div className={styles.mssg}>
+
+                    <img src="https://placehold.co/500x640" alt="About us"  style={{borderRadius:10, width:500,height:490}}/>
+                    <p className={styles.msssg}>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, sed? A porro quae, reiciendis recusandae
                         illum labore quo minima obcaecati accusantium facere fugiat dolore animi! Officiis suscipit ea eos laborum
                         ad minima voluptatem porro saepe voluptates quis, expedita et blanditiis labore vitae perferendis fuga,
@@ -90,27 +92,19 @@ const About = () => {
                         voluptates earum aperiam voluptatum pariatur repellendus incidunt perferendis quia veritatis asperiores, ea
                         error perspiciatis nam neque impedit aut provident. Laudantium temporibus harum minima pariatur
                         necessitatibus vero sunt impedit iusto aspernatur aliquam reiciendis, facere debitis omnis aperiam qui?
-                        Autem, placeat illo explicabo natus ad ipsam. Adipisci, hic magnam laboriosam saepe excepturi tenetur eum
-                        vel tempora amet architecto consequuntur velit porro laudantium nostrum cupiditate dolore quidem natus
-                        voluptates vero soluta? Distinctio odit libero laudantium quas in maiores consectetur quae, nobis
-                        repudiandae hic atque iure minus molestiae culpa. Atque excepturi nobis aliquam mollitia officiis vero
-                        assumenda accusantium dolorum, facere, pariatur corporis dolorem fugit, totam sed officia adipisci
-                        necessitatibus neque. Tempora, dolor quod ad sapiente praesentium laudantium atque consequuntur perspiciatis
-                        ipsa eaque cum numquam! A, mollitia dolore sed ducimus expedita iste? Debitis tempora libero pariatur error
                         culpa, reprehenderit labore totam rem iure sapiente ratione voluptates omnis, eos aliquam nihil soluta vero
-                        quasi facere ducimus odio ab? Explicabo odio ipsam quos, saepe tempora accusantium veritatis eos eaque dolor
-                        alias. Dicta qui rem incidunt porro, dolorum veritatis maiores, odio voluptate consequuntur alias autem
-                        minima rerum id deleniti a commodi quis deserunt aut. Nam culpa fuga quis iste dolorem, reprehenderit
                         aperiam dolore, debitis veniam a optio esse officia, ut consectetur id praesentium autem? Asperiores, modi
                         amet odit recusandae quae hic dolores eligendi dicta quidem et debitis? Nobis sed eos quasi sit, consectetur
                         ipsa eius repellat nemo in iure doloribus aspernatur reiciendis ex praesentium quae est. Dolorum deserunt
                         nisi illum voluptate magni at ducimus earum quisquam, eius repudiandae totam sint debitis ullam quod nemo
 
                     </p>
+                    </div>
                 </section>
 
                 <section className={styles.ourGoals} id="our-goals">
                     <h1>Our Goals</h1>
+                    <div className={styles.lastmsg}>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae numquam fugit doloremque cupiditate
                         voluptate aspernatur tempora reprehenderit ut sed fuga optio quis, ullam libero sequi rerum minima
@@ -119,8 +113,9 @@ const About = () => {
                         modi eos dignissimos itaque quod reiciendis quasi pariatur qui animi aliquid dolorem fugit ut a, dolor
                         delectus cupiditate blanditiis libero assumenda tempora? Suscipit perspiciatis explicabo earum est, placeat
                         itaque assumenda maiores commodi veniam iste facere. Dolores labore magnam esse dolore et, aut numquam nobis
-                        dolorem fugit quo hic!
+                        dolorem fugit quo hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis saepe atque delectus vel cum eligendi nam nostrum recusandae, repellat laudantium doloribus enim neque repudiandae necessitatibus dolore suscipit temporibus facere voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur hic minima perspiciatis vero temporibus ipsam enim architecto odit aperiam iure nulla doloribus fuga est, voluptates repudiandae incidunt, minus alias eos veritatis. Magni consequatur cumque animi non explicabo laborum aspernatur repellendus nulla! Commodi blanditiis, dolores exercitationem, ducimus, odit reiciendis maiores ullam reprehenderit tempora unde maxime? Illo, architecto excepturi aspernatur cum, facere, veniam consequuntur id voluptate dolorem odit assumenda qui. Eaque recusandae, amet tempore corporis, cum dignissimos hic sed alias doloribus obcaecati nam magnam in laudantium repellat voluptates deleniti enim mollitia. Voluptatum sunt unde perferendis non ullam illo minus tempora incidunt consequuntur!
                     </p>
+                    </div>
                 </section>
             </div>
         </>
