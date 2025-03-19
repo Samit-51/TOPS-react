@@ -142,10 +142,11 @@ nav a {
     top: 0;
     right: 0;
     transition: all 0.5s;
-    z-index: 3;
+    z-index: 40;
     transform: translateX(100vw);
-    background: rgb(112, 180, 69);
+    background: var(--nav-colour);
     overflow: hidden auto;
+    box-shadow: -20px 0px 30px -20px #000;
 }
 
 .ham-burger-menu ul {
@@ -191,6 +192,11 @@ nav a {
     transform: translateX(0);
 }
 
+.ham-burger{
+    margin-inline-start: auto;
+}
+
+
 .links a,
 .main-links a {
     text-decoration: none;
@@ -202,13 +208,14 @@ nav a {
     padding: 1rem 2.25rem;
     background: var(--nav-colour);
     top: 0;
-    z-index: 9999;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     box-shadow: 0 5px 10px -5px black;
 }
+
 
 .logo {
     height: 70px;
@@ -384,6 +391,7 @@ nav a {
 /* Popup Styles */
 .popup-overlay {
     position: fixed;
+    z-index: 30;
     top: 0;
     left: 0;
     width: 100%;
@@ -547,6 +555,13 @@ nav a {
     .main-links,
     .links {
         display: none;
+    }
+
+    .main-nav .top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .ham-burger {
