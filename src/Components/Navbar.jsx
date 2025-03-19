@@ -158,11 +158,6 @@ const Navbar = () => {
                         <li>
                             <Link to="/contactus">Contact us</Link>
                         </li>
-                        <span className="ham-burger">
-                            <button className="ham-burger-button" onClick={toggleHamburger}>
-                                <FaBars></FaBars>
-                            </button>
-                        </span>
                     </ul>
                 </div>
             </nav>
