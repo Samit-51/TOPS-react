@@ -3,6 +3,7 @@ section {
   position: relative;
   margin-bottom: 4rem;
   padding: 1rem 0;
+  width: 100%;
 }
 
 .aboutContainer {
@@ -21,6 +22,7 @@ section {
   gap: 2rem;
   position: relative;
   padding: 0;
+ 
 }
 
 .index .img {
@@ -30,16 +32,7 @@ section {
   overflow: hidden;
 }
 
-.index .img::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(220, 20, 60, 0.1);
-  z-index: 1;
-}
+
 
 .index img {
   height: 100%;
@@ -54,25 +47,6 @@ section {
   transform: scale(1.02);
 }
 
-.customShapeDividerBottom1740212333 {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  z-index: 2;
-}
-
-.customShapeDividerBottom1740212333 svg {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100px;
-  transform: rotateY(180deg);
-  fill: #fff;
-}
 
 .principleMsg,
 .chairmanMsg {
@@ -80,23 +54,16 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1.5rem; /* Reduced gap for mobile */
   color: #808080;
   background-color: #FFFFFF;
-  padding: 2rem 0;
+  padding: 2rem 1rem; /* Added horizontal padding */
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 
-.principleMsg::before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(220, 20, 60, 0.05);
-  z-index: -1;
-}
-
+.principleMsg::before,
 .chairmanMsg::before {
   content: '';
   position: absolute;
@@ -110,7 +77,7 @@ section {
   color: #862B33;
   text-align: center;
   position: relative;
-  font-size: clamp(1.5rem, 10vw, 3.5rem);
+  font-size: clamp(1.5rem, 7vw, 3.5rem); /* Adjusted clamp for better mobile sizing */
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -118,12 +85,15 @@ section {
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.2);
   width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 section h1::before {
   content: '';
-  height: 4px;
-  width: 60%;
+  height: 3px;
+  width: 80%; /* Wider on mobile */
+  max-width: 300px;
   bottom: -15px;
   position: absolute;
   left: 50%;
@@ -134,56 +104,86 @@ section h1::before {
 
 .msg {
   height: 100%;
-  width: 85%;
+  width: 90%; /* Wider on mobile */
   max-width: 1200px;
   background: #FFFFFF;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   transition: transform 0.3s ease;
   border-top: 3px solid #862B33;
   box-sizing: border-box;
 }
+
 .lastmsg {
   height: 100%;
-  width: 85%;
+  width: 90%; /* Wider on mobile */
   max-width: 1200px;
   background: #FFFFFF;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   transition: transform 0.3s ease;
   border-top: 3px solid #862B33;
   box-sizing: border-box;
-  margin-left: 100px;
+  margin-left: 0; /* Reset margin for mobile */
 }
-.lastmsg p{
-  margin:0px!important;
+.lastmsg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
+}
+
+
+
+@media (min-width: 768px) {
+  .lastmsg {
+    margin-left: 100px; /* Apply margin on larger screens */
+  }
+}
+
+.lastmsg p {
+  margin: 0 !important;
   width: 100%;
-  padding:0px!important
+  padding: 0 !important;
 }
 
 .msg:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
 }
+
 .msgg:hover {
   transform: scale(1.005);
   box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
 }
 
 .msg img {
-  margin: 30px 30px 30px 0;
-  height: clamp(120px, 20vw, 300px);
-  width: clamp(120px, 20vw, 300px);
+  margin: 0 auto 1.5rem auto; /* Center image on mobile */
+  height: clamp(100px, 15vw, 300px);
+  width: clamp(100px, 15vw, 300px);
   object-fit: cover;
-  float: left;
+  float: none; /* Reset float for mobile */
+  display: block; /* Make it a block for proper centering */
   border-radius: 50%;
   shape-outside: circle();
   border: 5px solid #FFFFFF;
   box-shadow: 0 0 0 2px #862B33, 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
+
+  
+  .msg img {
+    margin: 30px 30px 30px 0;
+    float: left; /* Original float for desktop */
+    height: clamp(120px, 20vw, 300px);
+    width: clamp(120px, 20vw, 300px);
+  }
+  
+  .chairmanMsg .msg img {
+    float: right;
+    margin: 30px 0 30px 30px;
+  }
+
 
 .msg img:hover {
   transform: scale(1.05);
@@ -192,69 +192,101 @@ section h1::before {
 
 .msg p {
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.7;
   color: #808080;
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem); /* Responsive text size */
 }
 
-.chairmanMsg .msg img {
-  float: right;
-  margin: 30px 0 30px 30px;
-}
-
-
-.msgg{
+.msgg {
   display: flex;
+  flex-direction: column; /* Stack on mobile */
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1.5rem;
   color: #808080;
   background-color: #FFFFFF;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 
 
+@media (min-width: 768px) {
+  .msgg {
+    display: flex;
+    flex-direction: row; /* Side by side on desktop */
+    gap: 3rem;
+    padding: 2rem 0;
+    width: 100%;
+  }
+}
 
 .knowUs {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1.5rem; /* Reduced for mobile */
   background-color: #FFFFFF;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
-.mssg:hover{
+
+
+@media (min-width: 768px) {
+  .knowUs {
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+}
+
+.mssg:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(220, 20, 60, 0.15);
 }
+
 .mssg {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem; /* Space between image and text */
-  width: 85%;
+  flex-direction: column; /* Stack on mobile */
+  align-items: center;
+  gap: 1.5rem;
+  width: 90%;
   max-width: 1200px;
   background: #FFFFFF;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   transition: transform 0.3s ease;
   border-top: 3px solid #862B33;
   box-sizing: border-box;
 }
+.mssg img {
+  flex-basis: 20%;
+}
+
+@media (min-width: 768px) {
+  .mssg {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}
 
 .mssg img {
-  width: 300px; /* Fixed square size */
-  height: 300px; /* Equal width and height */
-  object-fit: cover; /* Ensures the image stays properly cropped */
-  border-radius: 10px; /* Slight rounded edges */
+  width: 100%; /* Full width on mobile */
+  max-width: 1000px;
+  height: auto; /* Auto height to maintain aspect ratio */
+  aspect-ratio: 1/1; /* Keep square aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
   border: 5px solid #FFFFFF;
   box-shadow: 0 0 0 2px #862B33, 0 8px 20px rgba(0, 0, 0, 0.15);
-
+  transition: transform 0.3s ease;
 }
+
 
 .mssg img:hover {
   transform: scale(1.05);
@@ -262,20 +294,18 @@ section h1::before {
 }
 
 .mssg p {
-  flex: 1; /* Takes remaining space */
+  flex: 1;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.7;
   color: #808080;
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
 }
 
- 
-
 .ourGoals {
-  background: rgba(220, 20, 60, 0.05);
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .ourGoals::before {
@@ -288,12 +318,6 @@ section h1::before {
   background: rgba(220, 20, 60, 0.05);
   z-index: -1;
 }
-
-
-.ourGoals {
-  position: relative;
-}
-
 
 .ourGoals::after {
   content: '';
@@ -310,171 +334,46 @@ section h1::before {
   color: #862B33;
 }
 
-@media only screen and (min-width: 1200px) {
-  .msg {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 993px) {
-  .msg {
-    width: 85%;
-  }
-  
-  .index {
-    height: 90vh;
-  }
-}
-
-
-@media only screen and (max-width: 992px) {
-  .msg {
-    width: 90%;
-    background: #FFFFFF;
-  }
-
-  .knowUs img {
-    width: 90%;
-  }
-  
-  .index {
-    height: 80vh;
-  }
-  
-  .customShapeDividerBottom1740212333 svg {
-    height: 80px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .msg img {
-    margin: 0 auto 20px;
-    float: none;
-    display: block;
-    height: clamp(100px, 20vw, 250px);
-    width: clamp(100px, 20vw, 250px);
-  }
-
-  .chairmanMsg .msg img {
-    float: none;
-    margin: 0 auto 20px;
-  }
-
-  .msg p {
-    text-align: left;
-  }
-
-  nav ul li {
-    display: none;
-  }
-
-  .ham-burger {
-    display: block;
-  }
-  
-  .index {
-    height: 70vh;
-  }
-  
-  .aboutContainer h1 {
-    font-size: clamp(1.3rem, 8vw, 2.8rem);
-  }
-  
-  .customShapeDividerBottom1740212333 svg {
-    height: 60px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  section h1 {
-    font-size: clamp(1.25rem, 8vw, 2.5rem);
-  }
-
-  .msg {
+/* Additional responsive fixes */
+@media (max-width: 480px) {
+  .msg, .lastmsg, .mssg {
     width: 95%;
     padding: 1rem;
-  }
-
-  .knowUs p,
-  .ourGoals p {
-    padding: 1rem;
-    width: 95%;
-  }
-
-  section h1::before {
-    height: 3px;
-    width: 80%;
-  }
-  
-  .index {
-    height: 60vh;
-  }
-  
-  .customShapeDividerBottom1740212333 svg {
-    height: 40px;
-  }
-  
-  .principleMsg,
-  .chairmanMsg {
-    gap: 2rem;
-    padding: 1.5rem 0;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .msg {
-    width: 95%;
-    padding: 0.8rem;
-  }
-  
-  .msg img {
-    height: clamp(80px, 18vw, 200px);
-    width: clamp(80px, 18vw, 200px);
-    margin: 0 auto 15px;
-  }
-  
-  .msg p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  
-  .knowUs p,
-  .ourGoals p {
-    font-size: 0.95rem;
-    padding: 0.8rem;
-  }
-  
-  .index {
-    height: 50vh;
   }
   
   section {
     margin-bottom: 3rem;
   }
   
-  .customShapeDividerBottom1740212333 svg {
-    height: 30px;
-  }
-}
-
-@media only screen and (max-height: 500px) and (orientation: landscape) {
   .index {
-    height: 120vh;
-  }
-  
-  .msg {
-    padding: 1rem;
-  }
-  
-  .msg img {
-    height: clamp(80px, 15vw, 200px);
-    width: clamp(80px, 15vw, 200px);
+    height: 70vh; /* Reduce height on very small devices */
   }
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
-    animation: none !important;
+/* For extremely small devices */
+@media (max-width: 320px) {
+  .aboutContainer h1 {
+    font-size: 1.3rem;
+  }
+  
+  .msg p, .mssg p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .msg img, .mssg img {
+    margin-bottom: 1rem;
+  }
+  
+  .index {
+    height: 60vh;
   }
 }
+.img img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+

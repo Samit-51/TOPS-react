@@ -9,7 +9,9 @@ import img5 from "/src/assets/img5.jpg";
 import imageTwo from "/src/assets/400x400.svg";
 import styles from './Home.module.css';
 import img6 from "/src/assets/img6.jpg";
-
+import { CircleUser } from 'lucide-react';
+import { GraduationCap } from "lucide-react";
+import { Star } from "lucide-react";
 const images = [
     schoolIMG,
     img6,
@@ -157,16 +159,19 @@ function Home() {
                 <h1>Our Features</h1>
                 <div className={styles.featuresList}>
                     <div className={styles.featureItem}>
-                        <h3>Quality Education</h3>
-                        <p>Our school provides the best education with modern techniques.</p>
+                        <CircleUser size = {50} style={{ color: 'black',fill: 'white', marginLeft:'100px', marginBottom : '0px'}}/>
+                        <h3 style = {{fontSize: '30px'}}> 280K+ </h3>
+                        <p style = {{marginLeft: '32px', fontSize:'20px' , color : 'black', marginTop:'-15px'}}>Our Happy Students</p>
                     </div>
                     <div className={styles.featureItem}>
-                        <h3>Experienced Teachers</h3>
-                        <p>Highly skilled teachers who make learning fun and effective.</p>
+                        <GraduationCap size = {50} style={{ color: 'black',fill: 'white', marginLeft:'100px', marginBottom : '-8px'}}/>
+                        <h3 style = {{fontSize: '30px'}}> 20+ </h3>
+                        <p style = {{marginLeft: '50px', fontSize:'20px' , color : 'black', marginTop:'-15px'}}>Expert Instructor</p>
                     </div>
                     <div className={styles.featureItem}>
-                        <h3>Best Infrastructure</h3>
-                        <p>Well-equipped classrooms, labs, and sports facilities.</p>
+                        <Star size = {50} style={{ color: 'black',fill: 'white', marginLeft:'100px', marginBottom : '-3px'}}/>
+                        <h3 style = {{fontSize: '30px'}}>98%</h3>
+                        <p style = {{marginLeft: '50px', fontSize:'20px' , color : 'black', marginTop:'-15px'}}>Satisfaction Rate</p>
                     </div>
                 </div>
             </div>

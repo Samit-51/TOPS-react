@@ -38,10 +38,10 @@ const Navbar = () => {
                                 <Link to = '/entrance'>Entrance Form</Link>
                             </li>
                             <li>
-                                <Link to = 'magazine'>Magazine </Link>
+                                <Link to = '/magazine'>Magazine </Link>
                             </li>
                             <li>
-                                <Link to = 'results'>Results</Link>
+                                <Link to = '/results'>Results</Link>
                             </li>
                         </ul>
                     </div>

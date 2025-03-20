@@ -14,6 +14,9 @@ import Events from './Pages/Events/Events'
 import OurServices from "./Pages/OurServices/OurServices";
 import News from "./Pages/News/News";
 import Gallery from "./Pages/Gallery/Gallery";
+import Entrance from "./Pages/Entrance/Entrance";
+import Magazine from "./Pages/Magazine/Magazine";
+import Results from "./Pages/Results/Results";
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         <Route path = '/ourservices' element = {<OurServices/> } />
         <Route path = '/contactus' element = {<Contact/> } />
         <Route path = '/academics' element = {<Academics/> } />
+        <Route path = '/entrance' element = {<Entrance/> } />
+        <Route path = '/magazine' element = {<Magazine/> } />
+        <Route path = '/results' element = {<Results/> } />
         
 
        
