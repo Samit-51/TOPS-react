@@ -159,19 +159,19 @@ function Home() {
                 <h1>Our Features</h1>
                 <div className={styles.featuresList}>
                     <div className={styles.featureItem}>
-                        <CircleUser size = {50} style={{ color: 'black',fill: 'white', marginLeft:'100px', marginBottom : '0px'}}/>
+                        <CircleUser size = {50} style={{ color: 'black',fill: 'white', marginBottom:'-10px'}}/>
                         <h3 style = {{fontSize: '30px'}}> 280K+ </h3>
-                        <p style = {{marginLeft: '32px', fontSize:'20px' , color : 'black', marginTop:'-15px'}}>Our Happy Students</p>
+                        <p style = {{ fontSize:'20px' , color : 'black', marginTop:'-15px'}}>Our Happy Students</p>
                     </div>
                     <div className={styles.featureItem}>
-                        <GraduationCap size = {50} style={{ color: 'black',fill: 'white', marginLeft:'100px', marginBottom : '-8px'}}/>
+                        <GraduationCap size = {50} style={{ color: 'black',fill: 'white',  marginBottom:'-10px' }}/>
                         <h3 style = {{fontSize: '30px'}}> 20+ </h3>
-                        <p style = {{marginLeft: '50px', fontSize:'20px' , color : 'black', marginTop:'-15px'}}>Expert Instructor</p>
+                        <p style = {{ fontSize:'20px' , color : 'black'}}>Expert Instructor</p>
                     </div>
                     <div className={styles.featureItem}>
-                        <Star size = {50} style={{ color: 'black',fill: 'white', marginLeft:'100px', marginBottom : '-3px'}}/>
+                        <Star size = {50} style={{ color: 'black',fill: 'white',  marginBottom:'-10px'}}/>
                         <h3 style = {{fontSize: '30px'}}>98%</h3>
-                        <p style = {{marginLeft: '50px', fontSize:'20px' , color : 'black', marginTop:'-15px'}}>Satisfaction Rate</p>
+                        <p style = {{ fontSize:'20px' , color : 'black' }}>Satisfaction Rate</p>
                     </div>
                 </div>
             </div>
