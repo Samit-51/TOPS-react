@@ -202,7 +202,6 @@ iframe {
     border: none;
 }
 
-/* Responsive Design */
 @media only screen and (max-width: 768px) {
     .contactSection {
         flex-direction: column;

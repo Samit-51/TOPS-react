@@ -54,10 +54,10 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem; /* Reduced gap for mobile */
+  gap: 1.5rem; 
   color: #808080;
   background-color: #FFFFFF;
-  padding: 2rem 1rem; /* Added horizontal padding */
+  padding: 2rem 1rem; 
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -77,7 +77,7 @@ section {
   color: #862B33;
   text-align: center;
   position: relative;
-  font-size: clamp(1.5rem, 7vw, 3.5rem); /* Adjusted clamp for better mobile sizing */
+  font-size: clamp(1.5rem, 7vw, 3.5rem); 
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -92,7 +92,7 @@ section {
 section h1::before {
   content: '';
   height: 3px;
-  width: 80%; /* Wider on mobile */
+  width: 80%; 
   max-width: 300px;
   bottom: -15px;
   position: absolute;
@@ -104,7 +104,7 @@ section h1::before {
 
 .msg {
   height: 100%;
-  width: 90%; /* Wider on mobile */
+  width: 90%; 
   max-width: 1200px;
   background: #FFFFFF;
   padding: 1.25rem;
@@ -117,7 +117,7 @@ section h1::before {
 
 .lastmsg {
   height: 100%;
-  width: 90%; /* Wider on mobile */
+  width: 90%;
   max-width: 1200px;
   background: #FFFFFF;
   padding: 1.25rem;
@@ -126,7 +126,7 @@ section h1::before {
   transition: transform 0.3s ease;
   border-top: 3px solid #862B33;
   box-sizing: border-box;
-  margin-left: 0; /* Reset margin for mobile */
+  margin-left: 0; 
 }
 .lastmsg:hover {
   transform: translateY(-5px);
@@ -137,7 +137,7 @@ section h1::before {
 
 @media (min-width: 768px) {
   .lastmsg {
-    margin-left: 100px; /* Apply margin on larger screens */
+    margin-left: 100px; 
   }
 }
 
@@ -158,12 +158,12 @@ section h1::before {
 }
 
 .msg img {
-  margin: 0 auto 1.5rem auto; /* Center image on mobile */
+  margin: 0 auto 1.5rem auto; 
   height: clamp(100px, 15vw, 300px);
   width: clamp(100px, 15vw, 300px);
   object-fit: cover;
-  float: none; /* Reset float for mobile */
-  display: block; /* Make it a block for proper centering */
+  float: none; 
+  display: block; 
   border-radius: 50%;
   shape-outside: circle();
   border: 5px solid #FFFFFF;
@@ -174,7 +174,7 @@ section h1::before {
   
   .msg img {
     margin: 30px 30px 30px 0;
-    float: left; /* Original float for desktop */
+    float: left; 
     height: clamp(120px, 20vw, 300px);
     width: clamp(120px, 20vw, 300px);
   }
@@ -194,12 +194,12 @@ section h1::before {
   text-align: justify;
   line-height: 1.7;
   color: #808080;
-  font-size: clamp(0.95rem, 2.5vw, 1.05rem); /* Responsive text size */
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem); 
 }
 
 .msgg {
   display: flex;
-  flex-direction: column; /* Stack on mobile */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
@@ -215,7 +215,7 @@ section h1::before {
 @media (min-width: 768px) {
   .msgg {
     display: flex;
-    flex-direction: row; /* Side by side on desktop */
+    flex-direction: row; 
     gap: 3rem;
     padding: 2rem 0;
     width: 100%;
@@ -227,7 +227,7 @@ section h1::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem; /* Reduced for mobile */
+  gap: 1.5rem; 
   background-color: #FFFFFF;
   padding: 2rem 1rem;
   width: 100%;
@@ -249,7 +249,7 @@ section h1::before {
 
 .mssg {
   display: flex;
-  flex-direction: column; /* Stack on mobile */
+  flex-direction: column; 
   align-items: center;
   gap: 1.5rem;
   width: 90%;
@@ -276,10 +276,10 @@ section h1::before {
 }
 
 .mssg img {
-  width: 100%; /* Full width on mobile */
+  width: 100%; 
   max-width: 1000px;
-  height: auto; /* Auto height to maintain aspect ratio */
-  aspect-ratio: 1/1; /* Keep square aspect ratio */
+  height: auto; 
+  aspect-ratio: 1/1; 
   object-fit: cover;
   border-radius: 10px;
   border: 5px solid #FFFFFF;
@@ -334,7 +334,6 @@ section h1::before {
   color: #862B33;
 }
 
-/* Additional responsive fixes */
 @media (max-width: 480px) {
   .msg, .lastmsg, .mssg {
     width: 95%;
@@ -346,11 +345,10 @@ section h1::before {
   }
   
   .index {
-    height: 70vh; /* Reduce height on very small devices */
+    height: 70vh; 
   }
 }
 
-/* For extremely small devices */
 @media (max-width: 320px) {
   .aboutContainer h1 {
     font-size: 1.3rem;

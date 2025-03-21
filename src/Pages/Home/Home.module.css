@@ -111,7 +111,6 @@ p {
   background-color: #862B33;
 }
 
-/* Main Content Styles */
 .divOne {
   display: flex;
   align-items: center;
@@ -626,7 +625,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px; /* Space between the items */
+  gap: 20px; 
 }
 
 .featureItem {
@@ -636,7 +635,7 @@ p {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  width: 300px; /* Default width for larger screens */
+  width: 300px; 
 }
 
 .featureItem h3 {
@@ -649,51 +648,50 @@ p {
   margin: -15px 0;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1200px) {
   .featureItem {
-      width: 250px; /* Slightly larger width for medium screens */
+      width: 250px; 
   }
 }
 
 @media (max-width: 992px) {
   .featuresList {
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; 
       align-items: center;
   }
 
   .featureItem {
-      width:100%; /* Make each feature item take up more space */
-      margin: 10px 0; /* Add space between items */
+      width:100%; 
+      margin: 10px 0; 
   }
 }
 
 @media (max-width: 768px) {
   .featureItem {
-      width: 320px; /* Even more fluid on smaller screens */
-      margin: 10px 0; /* Space between items */
+      width: 320px; 
+      margin: 10px 0; 
   }
 
   .featureItem h3 {
-      font-size: 24px; /* Smaller font size for mobile screens */
+      font-size: 24px; 
   }
 
   .featureItem p {
-      font-size: 18px; /* Smaller font size for mobile screens */
+      font-size: 18px; 
   }
 }
 
 @media (max-width: 480px) {
   .featureItem {
-      width: 100%; /* Almost full width on the smallest screens */
-      margin: 15px 0; /* Add more space between items */
+      width: 100%; 
+      margin: 15px 0; 
   }
 
   .featureItem h3 {
-      font-size: 20px; /* Adjust text size */
+      font-size: 20px; 
   }
 
   .featureItem p {
-      font-size: 16px; /* Adjust text size */
+      font-size: 16px; 
   }
 }

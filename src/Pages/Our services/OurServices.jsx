@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./OurServices.module.css"; // Ensure this file exists
+import styles from "./OurServices.module.css"; 
 
 const OurServices = () => {
   return (
@@ -11,9 +11,9 @@ const OurServices = () => {
             <img
               src="https://placehold.co/600x400"
               alt="Computer Lab"
-              className={styles["service-img"]} // Fixed
+              className={styles["service-img"]} 
             />
-            <div className={styles["service-text"]}> {/* Fixed */}
+            <div className={styles["service-text"]}> 
               <h3>Computer Lab</h3>
               <p>
                 Our state-of-the-art computer lab is equipped with the latest
@@ -28,9 +28,9 @@ const OurServices = () => {
             <img
               src="https://placehold.co/600x400"
               alt="Cafeteria"
-              className={styles["service-img"]} // Fixed
+              className={styles["service-img"]} 
             />
-            <div className={styles["service-text"]}> {/* Fixed */}
+            <div className={styles["service-text"]}>
               <h3>Cafeteria</h3>
               <p>
                 The school cafeteria provides nutritious and delicious meals for
@@ -45,9 +45,9 @@ const OurServices = () => {
             <img
               src="https://placehold.co/600x400"
               alt="Transportation"
-              className={styles["service-img"]} // Fixed
+              className={styles["service-img"]} 
             />
-            <div className={styles["service-text"]}> {/* Fixed */}
+            <div className={styles["service-text"]}> 
               <h3>Transportation</h3>
               <p>
                 We provide safe and reliable transportation services for
@@ -62,9 +62,9 @@ const OurServices = () => {
             <img
               src="https://placehold.co/600x400"
               alt="Sports Facilities"
-              className={styles["service-img"]} // Fixed
+              className={styles["service-img"]} 
             />
-            <div className={styles["service-text"]}> {/* Fixed */}
+            <div className={styles["service-text"]}> 
               <h3>Sports Facilities</h3>
               <p>
                 Our school offers excellent sports facilities including a
@@ -79,9 +79,9 @@ const OurServices = () => {
             <img
               src="https://placehold.co/600x400"
               alt="Internet Facilities"
-              className={styles["service-img"]} // Fixed
+              className={styles["service-img"]} 
             />
-            <div className={styles["service-text"]}> {/* Fixed */}
+            <div className={styles["service-text"]}> 
               <h3>Internet Facilities</h3>
               <p>
                 The school provides high-speed internet access throughout the
